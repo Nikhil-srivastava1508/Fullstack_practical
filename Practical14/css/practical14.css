@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+}
+h1{
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 50px;
+}
+.a{
+    display: flex;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left:43%;
+    padding-block: 20px;
+}
+.b{
+    display: flex;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left:54%;
+    padding-block: 20px;
+}
+.f{
+    height:40px;
+    width: 50px;
+    background-color: yellow;
+    font-size: 20px;
+}
+.g{
+    height:40px;
+    width:50px;
+    background-color: yellow;
+    font-size: 20px;
+}
+.q{
+    padding-top: 1.4%;
+    text-align: center;
+    font-size: 28px;
+    padding-left: 10px;
+}
