@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/practical14.css">
+    <title>Counter</title>
+</head>
+<body>
+    <div>
+        <h1 class="e">COUNTER</h1>
+        <div class="a">
+            <button class="g">-</button>
+            
+        </div>
+        <div class="q"><h6></h6></div>
+        <div class="b">
+            <button class="f">+</button>
+        </div>
+    </div>
+    <script>
+        let counterDisplayElem = document.querySelector('.q');
+        let counterMinusElem = document.querySelector('.g');
+        let counterPlusElem = document.querySelector('.f');
+
+        let count = 0;
+
+        updateDisplay();
+
+        counterPlusElem.addEventListener("click",()=>{
+            count++;
+            updateDisplay();
+        }) ;
+
+        counterMinusElem.addEventListener("click",()=>{
+            if(count<=0){
+                return 0;
+            }
+            else{
+                count--;
+            }
+            updateDisplay();
+           
+            
+        });
+
+        function updateDisplay(){
+            counterDisplayElem.innerHTML = count;
+        };
+        </script>
+    
+</body>
+</html>
